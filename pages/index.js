@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Results from '../components/Results';
+import Footer from '../components/Footer';
 import requests from '../utils/requests';
 
 const Home = ({ results }) => {
@@ -17,6 +18,7 @@ const Home = ({ results }) => {
       <Header />
       <Navbar />
       <Results results={results} />
+      <Footer />
     </div>
   );
 };
