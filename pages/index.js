@@ -32,11 +32,10 @@ export async function getServerSideProps({ query }) {
     }`
   );
   const { results } = await request.json();
-  const movies = results.slice(0, 18);
 
   return {
     props: {
-      results: movies,
+      results,
     },
   };
 }
